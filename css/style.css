@@ -1,0 +1,54 @@
+body {
+  overflow: hidden;
+}
+
+header {
+  background: url(../img/hero.web.resize.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 790px;
+}
+
+@media screen and (max-width: 670px) {
+  header {
+    min-height: 250px;
+  }
+}
+
+.brand-font {
+  color: #e7dfee;
+  font-family: 'Monoton';
+  font-size: 50px;
+}
+
+nav .badge {
+  position: relative;
+  right: 35px;
+  top: 40px;
+  z-index: +99;
+}
+
+.card_header_size {
+  font-family: fantasy;
+  font-size: 150px;
+}
+
+.dee {
+  border: 5px solid white;
+  border-radius: 5px;
+  color: #1578ce;
+}
+
+.form_hide {
+  display: none;
+  width: 500px;
+  border: 1px solid #ccc;
+  padding: 14px;
+  background: #ececec;
+}
+
+.form_hide {
+  margin-right: 900px;
+  margin-top: 150px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+{
+  "name": "materialize",
+  "version": "1.0.0",
+  "description": "dHue mock site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akhirah Strong",
+  "license": "ISC",
+  "dependencies": {
+    "materialize-css": "^1.0.0-rc.2"
+  }
+}
