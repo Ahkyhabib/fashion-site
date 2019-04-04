@@ -13,8 +13,8 @@ header {
   header {
     min-height: 1200px;
   }
-  .testing {
-    font-size: unset;
+  .testing h1 {
+    font-size: 70px;
   }
 }
 
