@@ -15,6 +15,12 @@
 
 
 <body>
+    <ul class="sidenav" id="mobile-links">
+        <li><a class="home_card" href="">Home</a></li>
+        <li><a class="about_card" href="">About</a></li>
+        <li><a class="products_card" href="">Products</a></li>
+        <li><a class="contact_card" href="">Contact</a></li>
+      </ul>
   <!-- Nav Bar   -->
   <header>
   <div class="navbar-fixed">
@@ -25,10 +31,10 @@
           <i class="material-icons">menu</i>
         </a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Products</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a class="home_card" href="">Home</a></li>
+          <li><a class="about_card" href="">About</a></li>
+          <li><a class="products_card" href="">Products</a></li>
+          <li><a class="contact_card" href="">Contact</a></li>
           <li><a href="" class="btn-floating deep-purple darken-3 white-text z-depth-0">
               <i class="material-icons ">notifications</i>
           </a></li>
@@ -42,7 +48,9 @@
         <div class="col s12 m6">
           <div class="card transparent z-depth-0">
             <div class="card-content white-text">
+              <div class="testing">
               <h1 class="card_header_size"><span class="dee">d</span>Hued Fashion</h1> 
+              </div>
               <p>Fashion and design are very popular parts of many cultures. The various types of clothing and accessories to choose from allow people to create their own sense of style that reflects their unique personality.</p>
             </div>
             <div class="card-action">
@@ -52,10 +60,34 @@
         </div>
       </div>
   </div>
+  <div class="row hide_card_3">
+    <div class="container">
+      <div class="col s12 m6">
+        <div class="card transparent z-depth-0">
+          <div class="card-content white-text">
+            <h1 class="">Product</h1> 
+            <p>Fashion and design are very popular parts of many cultures. The various types of clothing and accessories to choose from allow people to create their own sense of style that reflects their unique personality.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row hide_card_2">
+    <div class="container">
+      <div class="col s12 m6">
+        <div class="card transparent z-depth-0">
+          <div class="card-content white-text">
+            <h1 class="">About Us</h1> 
+            <p>Fashion and design are very popular parts of many cultures. The various types of clothing and accessories to choose from allow people to create their own sense of style that reflects their unique personality.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
  
-  <div class="row form_hide s12 6m" id="form_hide">
+  <div class="row form_hide " id="form_hide">
         <div class="container">
-        <form class="col s12">
+        <form class="col s12 card_view">
           <div class="row">
             <div class="input-field col s12">
               <input id="first_name" type="text" class="validate">
@@ -75,15 +107,10 @@
           </div>
         </form>
       </div> 
-      </div>   
+  </div>   
   </header>
 
-  <ul class="sidenav" id="mobile-links">
-    <li><a href="">Home</a></li>
-    <li><a href="">About</a></li>
-    <li><a href="">Products</a></li>
-    <li><a href="">Contact</a></li>
-  </ul>
+  
   
   <!-- Compiled and minified JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

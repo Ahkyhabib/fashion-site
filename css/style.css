@@ -6,12 +6,15 @@ header {
   background: url(../img/hero.web.resize.jpg);
   background-position: center;
   background-size: cover;
-  min-height: 790px;
+  min-height: 950px;
 }
 
 @media screen and (max-width: 670px) {
   header {
-    min-height: 250px;
+    min-height: 1200px;
+  }
+  .testing {
+    font-size: unset;
   }
 }
 
@@ -29,11 +32,10 @@ nav .badge {
 }
 
 .card_header_size {
-  font-family: fantasy;
   font-size: 150px;
 }
 
-.dee {
+.card_header_size .dee {
   border: 5px solid white;
   border-radius: 5px;
   color: #1578ce;
@@ -41,15 +43,23 @@ nav .badge {
 
 .form_hide {
   display: none;
-  width: 500px;
+  width: 700px;
   border: 1px solid #ccc;
   padding: 14px;
   background: #ececec;
 }
 
 .form_hide {
-  margin-right: 900px;
+  margin-right: 950px;
   margin-top: 150px;
+}
+
+.hide_card_2 {
+  display: none;
+}
+
+.hide_card_3 {
+  display: none;
 }
 
 input[type=text]:not(.browser-default):focus:not([readonly]),
