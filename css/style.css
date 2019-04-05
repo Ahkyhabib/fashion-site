@@ -11,9 +11,12 @@ header {
 
 @media screen and (max-width: 670px) {
   header {
-    min-height: 1200px;
+    min-height: 800px;
   }
   .testing h1 {
+    font-size: 70px;
+  }
+  .thankyou_card h1 {
     font-size: 70px;
   }
 }
@@ -62,19 +65,68 @@ nav .badge {
   display: none;
 }
 
+.card-title span {
+  font-size: 150px;
+}
+
+.thankyou_card {
+  display: none;
+}
+
+/* label color */
+.input-field label {
+  color: #9a9191;
+}
+
+/* label color */
+.input-field label {
+  color: #1e88e5;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #1e88e5;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #1e88e5;
+  -webkit-box-shadow: 0 1px 0 0 #1e88e5;
+          box-shadow: 0 1px 0 0 #1e88e5;
+}
+
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #1e88e5;
+  -webkit-box-shadow: 0 1px 0 0 #1e88e5;
+          box-shadow: 0 1px 0 0 #1e88e5;
+}
+
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #1e88e5;
+  -webkit-box-shadow: 0 1px 0 0 #1e88e5;
+          box-shadow: 0 1px 0 0 #1e88e5;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #1e88e5;
+}
+
+/* label focus color */
+/* label underline focus color */
 input[type=text]:not(.browser-default):focus:not([readonly]),
 input[type=email]:not(.browser-default):focus:not([readonly]),
-input[type=text]:not(.browser-default):focus:not([readonly]),
-textarea.materialize-textarea:focus:not([readonly]) {
-  border-color: #c940ec;
+input.materialize-textarea:focus:not([readonly]) {
+  border-color: #1e88e5;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
 input[type=text]:not(.browser-default):focus:not([readonly]) + label,
 textarea.materialize-textarea:focus:not([readonly]) + label,
-input[type=email]:not(.browser-default):focus:not([readonly]) + label,
-input[type=text]:not(.browser-default):focus:not([readonly]) + label {
-  color: #c940ec !important;
+input[type=email]:not(.browser-default):focus:not([readonly]) + label {
+  color: #1e88e5 !important;
 }
 /*# sourceMappingURL=style.css.map */
