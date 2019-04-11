@@ -1,3 +1,10 @@
+//Global variables for validating the form
+const validating_contact = $('val_contact').val();
+const fvalidate = $('#fvalidate').val();
+const lvalidate = $('#lvalidate').val();
+const evalidate = $('#evalidate').val();
+const valbuttno = $('#valbuttno').val();
+
 
 //The side nav bar for mobile
 //Show contact form  
@@ -36,4 +43,6 @@ $(document).ready(function(){
     $('.about_card, .products_card, .contact_card').on('click', function(){
         $('.thankyou_card').hide();
     })
+
+    
   });

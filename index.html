@@ -87,23 +87,24 @@
  
   <div class="row form_hide slide_down" id="form_hide">
         <div class="container">
-        <form class="col s12 card_view">
+        <form class="col s12 card_view" id="validating_contact" required>
           <div class="row">
             <div class="input-field col s12">
-              <input id="first_name" type="text" class="validate ">
+              <input id="first_name" type="text" class="fvalidate ">
               <label for="first_name">First Name</label>
             </div>
             <div class="input-field col s12">
-              <input id="last_name" type="text"  class="validate ">
+              <input id="last_name" type="text"  class="lvalidate ">
               <label   for="last_name">Last Name</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <input id="email" type="email" class="validate">
+              <input id="email" type="email" class="evalidate">
               <label for="email">Email</label>
             </div>
-            <a class="waves-effect blue darken-2 waves-light btn-large display_form" id="display_form"><i class="material-icons right">account_circle</i>Get Informed</a>
+            <a class="waves-effect blue darken-2 waves-light btn-large display_form" id="display_form valbuttno">
+              <i class="material-icons right">account_circle</i>Get Informed</a>
           </div>
         </form>
       </div> 
