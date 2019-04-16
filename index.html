@@ -35,14 +35,21 @@
           <li><a class="about_card" href="">About</a></li>
           <li><a class="products_card" href="">Products</a></li>
           <li><a class="contact_card" href="">Contact</a></li>
-          <li><a href="" class="btn-floating deep-purple darken-3 white-text z-depth-0">
-              <i class="material-icons ">notifications</i>
+          <!-- Social media icons -->
+          <li><a href="#" class="btn-floating btn-small blue darken-2 z-depth-0 ">
+            <i class="fab fa-instagram"></i>
           </a></li>
-          <li><span class="badge white-text blue darken-2 new">5</span></li>
+          <li><a href="#" class="btn-floating btn-small blue darken-2 z-depth-0 ">
+            <i class="fab fa-facebook"></i>
+          </a></li>
+          <li><a href="#" class="btn-floating btn-small blue darken-2 z-depth-0 ">
+            <i class="fab fa-twitter"></i>
+          </a></li>
         </ul>
       </div>
     </nav>
   </div>
+  <!-- All card and card content -->
   <div class="row hide_card">
       <div class="container">
         <div class="col s12 m6">
@@ -84,31 +91,35 @@
       </div>
     </div>
   </div>
- 
-  <div class="row form_hide slide_down" id="form_hide">
+  <!-- form -->
+  <div class="row form_hide slide_down" id="form_hide" >
         <div class="container">
-        <form class="col s12 card_view" id="validating_contact" required>
+        <form name="myform" method="post" class="col s12 card_view" id="validating_contact" onSubmit="return validate()" required>
           <div class="row">
             <div class="input-field col s12">
-              <input id="first_name" type="text" class="fvalidate ">
+              <i class="material-icons prefix">person</i>
+              <input name="firstname" id="first_name" type="text" class="fvalidate ">
               <label for="first_name">First Name</label>
             </div>
             <div class="input-field col s12">
-              <input id="last_name" type="text"  class="lvalidate ">
+              <i class="material-icons prefix">person</i>
+              <input name="lastname" id="last_name" type="text"  class="validate ">
               <label   for="last_name">Last Name</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
+              <i class="material-icons prefix">email</i>
               <input id="email" type="email" class="evalidate">
               <label for="email">Email</label>
             </div>
-            <a class="waves-effect blue darken-2 waves-light btn-large display_form" id="display_form valbuttno">
+            <a type="submit" class="waves-effect blue darken-2 waves-light          btn-large display_form" id="display_form valbuttno">
               <i class="material-icons right">account_circle</i>Get Informed</a>
           </div>
         </form>
       </div> 
   </div>
+  <!-- Thank you card -->
   <div class="container thankyou_card">
       <div class="row">
           <div class="col s12 m6">

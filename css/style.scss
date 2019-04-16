@@ -114,20 +114,6 @@ nav .badge {
   color: #1e88e5;
 }
 
-/* label focus color */
-// .input-field input[type=text]:focus + label {
-//   color: rgb(57, 118, 193);
-// }
-// .input-field input[type=email]:focus + label {
-//   color: rgb(57, 118, 193);
-// }
-
-/* label underline focus color */
-// .input-field input[type=text]:focus {
-//   border-bottom: 1px solid #000;
-//   box-shadow: 0 1px 0 0 #000;
-
-
 input[type=text]:not(.browser-default):focus:not([readonly]),
 input[type=email]:not(.browser-default):focus:not([readonly]),
 input.materialize-textarea:focus:not([readonly])
@@ -136,24 +122,11 @@ input.materialize-textarea:focus:not([readonly])
   box-shadow: none;
 }
 
-input[type=text]:not(.browser-default):focus:not([readonly]) + label,
-textarea.materialize-textarea:focus:not([readonly]) + label,
-input[type=email]:not(.browser-default):focus:not([readonly]) + label,
-  {
-  color: #1e88e5 !important;
-}
-
-// input[type=text]:not(.browser-default):focus:not([readonly]),
-// input[type=email]:not(.browser-default):focus:not([readonly]),
-// input[type=text]:not(.browser-default):focus:not([readonly]),
-// textarea.materialize-textarea:focus:not([readonly]){
-//   border-color: #c940ec;
-//   box-shadow: none;
-// }
-
 // input[type=text]:not(.browser-default):focus:not([readonly]) + label,
 // textarea.materialize-textarea:focus:not([readonly]) + label,
-// input[type=email]:not(.browser-default):focus:not([readonly]) + label,
-// input[type=text]:not(.browser-default):focus:not([readonly]) + label{
-//   color: #c940ec !important;
+// input[type=email]:not(.browser-default):focus:not([readonly]) + label{
+//   {
+//   color: #1e88e5 !important;
 // }
+
+}

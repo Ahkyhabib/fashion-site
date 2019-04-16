@@ -10,10 +10,32 @@ const valbuttno = $('#valbuttno').val();
 //Show contact form  
 $(document).ready(function(){
     $('.sidenav').sidenav();
+
+    
     $('.show_form').on('click', function(){
         $('#form_hide').fadeIn(200);
         $('.hide_card').hide();
     })
+    //Form validation
+    function validate(){
+        var email = document ["myform"]["email"].val;    
+        var firstname = document["myform"]['firstname'].val;    
+        var lastname = document["myform"]["lastname"].val;
+        
+         if(email==""){
+             alert("Must provide email");
+             email.focus()
+             return false;
+        }else if(firstname==""){
+            alert("Must provide first name")
+            return false;
+        }else if(lastname==""){
+            alert("Must provide last name")
+            return false;
+        }
+        return true;
+    }
+    
     //Show about card, and hide all other cards
     $('.about_card').on('click', function(){
         event.preventDefault();
@@ -43,6 +65,8 @@ $(document).ready(function(){
     $('.about_card, .products_card, .contact_card').on('click', function(){
         $('.thankyou_card').hide();
     })
+
+    
 
     
   });
