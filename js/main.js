@@ -1,14 +1,23 @@
 //Global variables for validating the form
-const validating_contact = $('val_contact').val();
-const fvalidate = $('#fvalidate').val();
-const lvalidate = $('#lvalidate').val();
-const evalidate = $('#evalidate').val();
-const valbuttno = $('#valbuttno').val();
+// const validating_contact = $('val_contact').val();
+// const fvalidate = $('#fvalidate').val();
+// const lvalidate = $('#lvalidate').val();
+// const evalidate = $('#evalidate').val();
+// const valbuttno = $('#valbuttno').val();
 
 
 //The side nav bar for mobile
 //Show contact form  
 $(document).ready(function(){
+    $('[data-myform]').on('submit', function(e){
+      e.preventDefault();
+      let goodform = validate();
+      if (goodform) {
+
+      }else {
+          
+      }  
+    })
     $('.sidenav').sidenav();
 
     
@@ -18,13 +27,13 @@ $(document).ready(function(){
     })
     //Form validation
     function validate(){
-        var email = document ["myform"]["email"].val;    
+        let email = $('[data-myform-email]');
         var firstname = document["myform"]['firstname'].val;    
         var lastname = document["myform"]["lastname"].val;
-        
-         if(email==""){
+         console.log(email)
+         if($(email).val()==""){
+             email.focus();
              alert("Must provide email");
-             email.focus()
              return false;
         }else if(firstname==""){
             alert("Must provide first name")

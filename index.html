@@ -94,7 +94,7 @@
   <!-- form -->
   <div class="row form_hide slide_down" id="form_hide" >
         <div class="container">
-        <form name="myform" method="post" class="col s12 card_view" id="validating_contact" onSubmit="return validate()" required>
+        <form name="myform" method="post" class="col s12 card_view" id="validating_contact" data-myform>
           <div class="row">
             <div class="input-field col s12">
               <i class="material-icons prefix">person</i>
@@ -110,11 +110,11 @@
           <div class="row">
             <div class="input-field col s12">
               <i class="material-icons prefix">email</i>
-              <input id="email" type="email" class="evalidate">
+              <input id="email" type="email" class="evalidate" data-myform-email>
               <label for="email">Email</label>
             </div>
-            <a type="submit" class="waves-effect blue darken-2 waves-light          btn-large display_form" id="display_form valbuttno">
-              <i class="material-icons right">account_circle</i>Get Informed</a>
+            <button type="submit" class="waves-effect blue darken-2 waves-light btn-large display_form" id="display_form valbuttno" >
+              <i class="material-icons right">account_circle</i>Get Informed</button>
           </div>
         </form>
       </div> 

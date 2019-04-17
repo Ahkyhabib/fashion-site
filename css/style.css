@@ -114,19 +114,11 @@ nav .badge {
   color: #1e88e5;
 }
 
-/* label focus color */
-/* label underline focus color */
 input[type=text]:not(.browser-default):focus:not([readonly]),
 input[type=email]:not(.browser-default):focus:not([readonly]),
 input.materialize-textarea:focus:not([readonly]) {
   border-color: #1e88e5;
   -webkit-box-shadow: none;
           box-shadow: none;
-}
-
-input[type=text]:not(.browser-default):focus:not([readonly]) + label,
-textarea.materialize-textarea:focus:not([readonly]) + label,
-input[type=email]:not(.browser-default):focus:not([readonly]) + label {
-  color: #1e88e5 !important;
 }
 /*# sourceMappingURL=style.css.map */
